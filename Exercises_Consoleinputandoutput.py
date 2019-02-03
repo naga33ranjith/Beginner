@@ -21,7 +21,7 @@ def Exercise6():
     integer_1=int(input("Enter an integer"))
     integer_2=int(input("Enter an integer"))
     print("Maximum of given two numbers",max(integer_1,integer_2))
-def Exercis7():
+def Exercise7():
     ls=[]
     for i in range(5):
         number=int(input("Enter the number"))
@@ -51,14 +51,19 @@ def Exercise10():
         print("\n",i)
     
 def Exercise11():
-    ls=[]
-    First_Number=0
-    Second_Number=1
-    ls.append(First_Number);ls.append(Second_Number)
-    for i in range(2,100):
+        ls=[]
+        First_Number=0
+        Second_Number=1
+        ls.append(First_Number);ls.append(Second_Number)
+        for i in range(2,100):
+                a=ls[i-1]+ls[i-2]
+                ls.append(a)
+        print(ls)
+
+def Exercise12():
         
-        #pending
+   
+           
 
-def Exercise12():  
-    
 
+ 

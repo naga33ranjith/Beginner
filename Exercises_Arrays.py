@@ -28,7 +28,6 @@ def Exercise2():
                 if(listforarray1[i]== listforarray2[j]):
                     return "Pass"
 
-Exercise2()
 
 
         
