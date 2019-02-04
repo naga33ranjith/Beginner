@@ -1,11 +1,12 @@
 from math import factorial
 from array import *
+import random
+
 
 def Exercise1():
     Number=int(input("Enter Number"))
     for i in range(Number):
         print(i)
-
 def Exercise2():
     li=[]
     Number=int(input("Enter Number"))
@@ -14,7 +15,6 @@ def Exercise2():
             li.append(i)
         
     print(li)
-
 def Exercise3():
     number=int(input("Enter number"))
     ls=[]
@@ -25,8 +25,8 @@ def Exercise3():
     
     print("Maximum number is:",max(ls))
     print("Minimunm number is :",min(ls))
-
 def Exercise4():
+
     number=int(input("Enter number"))
     firstnumber=0;secondnumber=1
     ls=[]
@@ -35,7 +35,6 @@ def Exercise4():
         x=ls[i-1]+ls[i-2]
         ls.append(x)
     print(ls)
-
 def Exercise5():
     Value_N=int(input("Enter number"))
     Value_k=int(input("Enter number"))
@@ -44,7 +43,6 @@ def Exercise5():
 
     else:
         print("invalid values")
-    
 def Exercise6():
     n=int(input("Enter number"))
     if n>=0:
@@ -66,7 +64,6 @@ def Exercise7():
         print("result",Numerator/Denominator)
     else:
         print("invalid input")
-
 def Exercise8():
     n=int(input("Enter number"))
     x=int(input("Enter number"))
@@ -88,20 +85,9 @@ def Exercise9():
         else :
             break
     print(count) 
-
-Exercise9()
-
-def Exercise10():
-    number=int(input("Enter Number"))
-    ls=[[]]
-    for row in range(number):
-        for column in range(number):
-            ls[row][column] = column
-    print(ls)
-
-# Exercise10()
-
 def generator(inputValue):
+
+
     startValue = 1
     endValue = inputValue
     for i in range(1, inputValue+1):
@@ -112,5 +98,38 @@ def generator(inputValue):
         print("\n")
         startValue = startValue + 1;
         endValue = endValue + 1
-
-#generator(4)
+def Exercise12():
+    number=int(input("Enter Number"))
+    print("Binary notation of the given  number is:",bin(number))
+def Exercise13():
+    number=int(input("Enter Number"))
+    print("Decimal format of the number",int(number,2))
+def Exercise14():
+    number=int(input("Enter number"))
+    print("Number is ",hex(number))
+def Exercise15():
+    number=int(input("Enter number "))
+    print("decimal format of entere number is",int(number,16))
+def Exercise16():
+    number=int(input("Entered number"))
+    print(random.randrange(1,number))
+   
+def Exercise17():
+    number1=int(input("Enter number"))
+    number2=int(input("Enter mumber"))
+    set1={};set2={}
+    #finding Greatest common divisor og given two integers'
+    for i in range(number1):
+        if number1%i == 0:
+            set1.update(i)
+    for j in range(number2):
+        if number2%i==0:
+            set2.update(j)
+    
+    set3=set.intersection(set1,set2)
+    a=max(list(set3))
+    print("Greatest common divisor",a)
+    #to find Lease common multiple
+    lcm=abs(number1*number2)/(a)
+    print("lcm is",lcm)
+    
